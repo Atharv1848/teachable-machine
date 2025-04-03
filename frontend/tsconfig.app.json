@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    /* ✅ Enable Incremental Builds */
+    "incremental": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+
+    /* ✅ ECMAScript and Module Settings */
+    "target": "ES2020",                        // Specify ECMAScript target version
+    "module": "ESNext",                        // Use ESNext modules
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],  // Include necessary libraries
+
+    /* ✅ Module and Bundler Settings */
+    "moduleResolution": "bundler",             // Resolve modules for bundlers
+    "allowImportingTsExtensions": true,        // Allow importing .ts extensions
+    "isolatedModules": true,                   // Treat each file as a module
+    "moduleDetection": "force",                // Force module detection
+    "noEmit": true,                            // Prevent emitting output files
+
+    /* ✅ JSX and React Settings */
+    "jsx": "react-jsx",                        // Use React's JSX transformation
+
+    /* ✅ Strict Type-Checking Options */
+    "strict": true,                            // Enable all strict type-checking options
+    "noUnusedLocals": true,                    // Error on unused local variables
+    "noUnusedParameters": true,                // Error on unused parameters
+    "noFallthroughCasesInSwitch": true,        // Error on switch fallthrough
+    "noUncheckedSideEffectImports": true,      // Disallow unchecked side effects
+
+    /* ✅ Skip Type Checking for Libraries */
+    "skipLibCheck": true                       // Skip type checking of declaration files
+  },
+  /* ✅ Include All Source Files */
+  "include": ["src"]
+}
